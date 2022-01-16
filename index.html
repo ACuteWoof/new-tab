@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>New Tab</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script>
+      function startTime() {
+        var today = new Date();
+        var h = today.getHours();
+        var m = today.getMinutes();
+        var s = today.getSeconds();
+        // add a zero in front of numbers<10
+        m = checkTime(m);
+        s = checkTime(s);
+        document.getElementById("time-text").innerHTML = h + ":" + m + ":" + s;
+        t = setTimeout("startTime()", 500);
+      }
+      function checkTime(i) {
+        if (i < 10) {
+          i = "0" + i;
+        }
+        return i;
+      }
+    </script>
+  </head>
+  <body onload="startTime()">
+    <main>
+      <div>
+        <h1 id="time-text"></h1>
+        <div class="the-grid">
+          <div class="links">
+            <a href="https://github.com">GitHub</a>
+	    <br>
+            <a href="https://discord.com/app">Discord</a>
+          </div>
+	  <div class="logo-cont">
+          <img src="./logo.gif" alt="logo" class="pfp" />
+	  </div>
+          <div class="links">
+            <a href="https://youtube.com">YouTube</a>
+	    <br>
+            <a href="https://reddit.com">Reddit</a>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

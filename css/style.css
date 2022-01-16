@@ -1,0 +1,79 @@
+@import url("./nord.css");
+@import url("./fontawesome-free-6.0.0-beta3-web/css/all.css");
+
+body {
+  background-image: url("./bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+* {
+  color: var(--nord4);
+  text-align: center;
+}
+
+#time-text {
+  font-family: monospace;
+  font-size: 10vh;
+  text-align: center;
+}
+
+.feed {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+footer {
+  background-color: #00000000;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  margin-top: unset;
+  position: absolute;
+  bottom: 7%;
+  left: 0;
+  right: 0;
+}
+
+main {
+  padding: 1rem;
+}
+
+.pfp {
+  border-radius: 50%;
+}
+
+.the-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.links {
+  padding: 6rem;
+  display: grid;
+  grid-template-rows: repeat(auto-fill, 1fr);
+  font-size: 2rem;
+  align-items: justify;
+  font-family: monospace;
+}
+
+a {
+  text-decoration: none;
+  color: var(--nord6);
+}
+
+a:hover {
+  color: var(--nord8);
+}
+
+.logo-cont {
+  text-align: center;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
